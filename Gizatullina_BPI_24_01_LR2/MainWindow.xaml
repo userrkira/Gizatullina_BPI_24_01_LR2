@@ -1,0 +1,331 @@
+﻿<Window x:Class="Gizatullina_BPI_24_01_LR2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Гизатуллина Лабораторная работа №2 В2"
+        Width="900"
+        Height="850"
+        MinWidth="700"
+        MinHeight="650"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="25">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Ввод исходных данных"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,20"/>
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+
+            <StackPanel>
+
+                <Border BorderBrush="LightGray"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Margin="0,0,0,10"
+                        Padding="10">
+
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="Formula1RadioButton"
+                                         GroupName="Formulas"
+                                         Checked="RadioButton_Checked"
+                                         Tag="1"
+                                         VerticalAlignment="Center"
+                                         Margin="5,0,15,0"/>
+
+                            <Image Source="/Gizatullina_BPI_24_01_LR2;component/Resources/Formula1.png"
+                                   Height="100"
+                                   Stretch="Uniform"
+                                   HorizontalAlignment="Left"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="Formula1Panel"
+                                    Margin="35,10,0,0">
+
+                            <TextBlock Text="Параметры"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,8"/>
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Text="a:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <TextBox x:Name="Formula1ATextBox"
+                                         Width="150"
+                                         Height="30"
+                                         Margin="0,0,20,0"/>
+
+                                <TextBlock Text="f:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <ComboBox x:Name="Formula1FComboBox"
+                                          Width="130"
+                                          Height="30"/>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+
+                <Border BorderBrush="LightGray"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Margin="0,0,0,10"
+                        Padding="10">
+
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="Formula2RadioButton"
+                                         GroupName="Formulas"
+                                         Checked="RadioButton_Checked"
+                                         Tag="2"
+                                         VerticalAlignment="Center"
+                                         Margin="5,0,15,0"/>
+
+                            <Image Source="/Gizatullina_BPI_24_01_LR2;component/Resources/Formula2.png"
+                                   Height="100"
+                                   Stretch="Uniform"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="Formula2Panel"
+                                    Margin="35,10,0,0">
+
+                            <TextBlock Text="Параметры"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,8"/>
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Text="a:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <TextBox x:Name="Formula2ATextBox"
+                                         Width="120"
+                                         Height="30"
+                                         Margin="0,0,15,0"/>
+
+                                <TextBlock Text="b:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <TextBox x:Name="Formula2BTextBox"
+                                         Width="120"
+                                         Height="30"
+                                         Margin="0,0,15,0"/>
+
+                                <TextBlock Text="f:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <ComboBox x:Name="Formula2FComboBox"
+                                          Width="130"
+                                          Height="30"/>
+
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+
+                <Border BorderBrush="LightGray"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Margin="0,0,0,10"
+                        Padding="10">
+
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="Formula3RadioButton"
+                                         GroupName="Formulas"
+                                         Checked="RadioButton_Checked"
+                                         Tag="3"
+                                         VerticalAlignment="Center"
+                                         Margin="5,0,15,0"/>
+
+                            <Image Source="/Gizatullina_BPI_24_01_LR2;component/Resources/Formula3.png"
+                                   Height="100"
+                                   Stretch="Uniform"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="Formula3Panel"
+                                    Margin="35,10,0,0">
+
+                            <TextBlock Text="Параметры"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,8"/>
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Text="a:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <TextBox x:Name="Formula3ATextBox"
+                                         Width="100"
+                                         Height="30"
+                                         Margin="0,0,15,0"/>
+
+                                <TextBlock Text="b:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <TextBox x:Name="Formula3BTextBox"
+                                         Width="100"
+                                         Height="30"
+                                         Margin="0,0,15,0"/>
+
+                                <TextBlock Text="c:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <ComboBox x:Name="Formula3CComboBox"
+                                          Width="100"
+                                          Height="30"
+                                          Margin="0,0,15,0"/>
+
+                                <TextBlock Text="d:"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,5,0"/>
+
+                                <ComboBox x:Name="Formula3DComboBox"
+                                          Width="100"
+                                          Height="30"/>
+
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+
+                <Border BorderBrush="LightGray"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Margin="0,0,0,10"
+                        Padding="10">
+
+                    <StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="Formula4RadioButton"
+                                         GroupName="Formulas"
+                                         Checked="RadioButton_Checked"
+                                         Tag="4"
+                                         VerticalAlignment="Center"
+                                         Margin="5,0,15,0"/>
+
+                            <Image Source="/Gizatullina_BPI_24_01_LR2;component/Resources/Formula4.png"
+                                   Height="120"
+                                   Stretch="Uniform"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="Formula4Panel"
+                                    Margin="35,10,0,0">
+
+                            <TextBlock Text="Параметры"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,8"/>
+
+                            <WrapPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="N:"/>
+                                    <ComboBox x:Name="NComboBox"
+                                              Width="100"
+                                              Height="30"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="K:"/>
+                                    <ComboBox x:Name="KComboBox"
+                                              Width="100"
+                                              Height="30"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="t:"/>
+                                    <TextBox x:Name="TTextBox"
+                                             Width="100"
+                                             Height="30"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="x:"/>
+                                    <TextBox x:Name="XTextBox"
+                                             Width="100"
+                                             Height="30"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="f:"/>
+                                    <TextBox x:Name="FTextBox"
+                                             Width="100"
+                                             Height="30"/>
+                                </StackPanel>
+
+                                <StackPanel Margin="0,0,15,10">
+                                    <TextBlock Text="y:"/>
+                                    <TextBox x:Name="YTextBox"
+                                             Width="100"
+                                             Height="30"/>
+                                </StackPanel>
+
+                            </WrapPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Border>
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    Margin="0,15,0,0">
+
+            <TextBlock x:Name="ErrorTextBlock"
+                       Foreground="Red"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,8"/>
+
+            <Button Content="Рассчитать"
+                    Width="180"
+                    Height="50"
+                    FontSize="16"
+                    Click="CalculateButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>
